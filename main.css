@@ -1,0 +1,27 @@
+/* Globale Angaben */
+html,body {font-family: Arial; font-size:1em; height:100%}
+H1 { color: #3885C0; font-size:1.3em}
+input {font-size:1em;}
+.myfont {color:#393C3E ;font-size:1.1em;}
+button {font-size:1em;width:100%;}
+a {font-size:1em;text-decoration:none}
+/* Sidebar und Content für Smartphone im Hochformat */
+.content { display:block; height:100%; margin: 10px 10px 10px 10px }
+.main { display:block; width:100%; background:#f4f5f8 }
+.sidebar { display:block; width:100%;background:#E0EEF9 }
+.textwrap {float: right;margin: 10px;}
+#footer: {height: 40px; position: fixed; left:0;bottom:0%;width:100%; background-color: #393838;}
+/* Breakpoint bei 576px = 36em für Smartphone im Querformat */
+/* Spalten untereinander 20:80, H1 = dunkelblau */
+@media all and (min-width: 36em){
+	.main { float: left; width:80%;}
+	.sidebar { float: left; width:20%;}
+	H1 { color: darkblue; font-size:1.3em }
+}
+/* Breakpoint bei 800px=50em für Desktop im Querformat */
+/* Spalten nebeneinander 30:70, H1 = dunkelblau */
+@media all and (min-width: 50em){
+	.main { width:80%;}
+	.sidebar { width:20%;background:#E0EEF9 }	
+	 H1 { color:#3885C0 ; font-size:1.3em }
+}
